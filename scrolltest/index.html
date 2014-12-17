@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>jQuery UI Slider</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.7.2.custom.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+</head>
+<body>
+<div id="sliderContent">
+    <div class="viewer">
+
+        <div class="content-conveyor ui-helper-clearfix">
+
+            <div class="item">
+
+                        <img src="img/omega.jpg" alt="Omega Nebula">
+
+
+            </div>
+
+            <div class="item">
+
+                <a href="#"><img src="img/rosette.jpg" alt="Rosette Nebula"></a>
+
+            </div>
+
+            <div class="item">
+
+                <img src="img/ring.jpg" alt="Ring Nebula">
+
+            </div>
+
+            <div class="item">
+
+                <img src="img/tarantula.jpg" alt="Tarantula Nebula">
+
+            </div>
+
+            <div class="item">
+
+                <img src="img/triangulum.jpg" alt="Triangulum Nebula">
+
+            </div>
+
+            <div class="item">
+
+                <img src="img/eagle.jpg" alt="Eagle Nebula">
+
+            </div>
+            <div class="item">
+
+                <img src="img/tarantula.jpg" alt="Tarantula Nebula">
+
+            </div>
+
+            <div class="item">
+
+                <img src="img/triangulum.jpg" alt="Triangulum Nebula">
+
+            </div>
+
+            <div class="item">
+
+                <img src="img/eagle.jpg" alt="Eagle Nebula">
+
+            </div>
+
+            <div class="item">
+
+                <img src="img/crab.jpg" alt="Crab Nebula">
+
+            </div>
+            <div class="item">
+
+                <img src="img/triangulum.jpg" alt="Triangulum Nebula">
+
+            </div>
+
+            <div class="item">
+
+                <img src="img/eagle.jpg" alt="Eagle Nebula">
+
+            </div>
+
+            <div class="item">
+
+                <img src="img/crab.jpg" alt="Crab Nebula">
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div id="sliderScroll">
+    <div id="slider"></div>
+</div>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        //vars
+        var viewer = $(".viewer", $("#sliderContent")),
+                conveyor = $(".content-conveyor", $("#sliderContent")),
+                item = $(".item", $("#sliderContent"));
+
+        //set length of conveyor
+        conveyor.css("width", item.length * parseInt(item.css("width")));
+
+        //config
+        var sliderOpts = {
+            max: (item.length * parseInt(item.css("width"))) - parseInt(viewer.css("width")),
+            slide: function (e, ui) {
+                conveyor.css("left", "-" + ui.value + "px");
+            }
+        };
+
+        //create slider
+        $("#slider").slider(sliderOpts);
+    });
+</script>
+</body>
+</html>
