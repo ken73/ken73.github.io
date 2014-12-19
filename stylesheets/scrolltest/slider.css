@@ -50,7 +50,7 @@ body {
 
 }
 
-#slider a::after {
+#slider span::after {
     content: "";
     display: block;
     height: 10px;
@@ -63,7 +63,7 @@ body {
     border: none;
 }
 
-#slider a.ui-state-active::before {
+#slider span.ui-state-active::before {
     content: "DRAG IT";
     text-align: center;
     padding-top: 5px;
