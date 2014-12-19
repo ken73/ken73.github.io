@@ -1,125 +1,19 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>jQuery UI Slider</title>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/scrolltest/jquery-ui-1.7.2.custom.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/scrolltest/slider.css">
+    <meta charset="utf-8">
+    <title>jQuery UI Slider - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+        $(function () {
+            $("#slider").slider();
+        });
+    </script>
 </head>
 <body>
-<div id="sliderContent">
-    <div class="viewer">
-
-        <div class="content-conveyor ui-helper-clearfix">
-
-            <div class="item">
-
-                        <img src="../images/scrolltest/omega.jpg" alt="Omega Nebula">
-
-
-            </div>
-
-            <div class="item">
-
-                <a href="#"><img src="../images/scrolltest/rosette.jpg" alt="Rosette Nebula"></a>
-
-            </div>
-
-            <div class="item">
-
-                <img src="../images/scrolltest/ring.jpg" alt="Ring Nebula">
-
-            </div>
-
-            <div class="item">
-
-                <img src="../images/scrolltest/tarantula.jpg" alt="Tarantula Nebula">
-
-            </div>
-
-            <div class="item">
-
-                <img src="../images/scrolltest/triangulum.jpg" alt="Triangulum Nebula">
-
-            </div>
-
-            <div class="item">
-
-                <img src="../images/scrolltest/eagle.jpg" alt="Eagle Nebula">
-
-            </div>
-            <div class="item">
-
-                <img src="../images/scrolltest/tarantula.jpg" alt="Tarantula Nebula">
-
-            </div>
-
-            <div class="item">
-
-                <img src="../images/scrolltest/triangulum.jpg" alt="Triangulum Nebula">
-
-            </div>
-
-            <div class="item">
-
-                <img src="../images/scrolltest/eagle.jpg" alt="Eagle Nebula">
-
-            </div>
-
-            <div class="item">
-
-                <img src="../images/scrolltest/crab.jpg" alt="Crab Nebula">
-
-            </div>
-            <div class="item">
-
-                <img src="../images/scrolltest/triangulum.jpg" alt="Triangulum Nebula">
-
-            </div>
-
-            <div class="item">
-
-                <img src="../images/scrolltest/eagle.jpg" alt="Eagle Nebula">
-
-            </div>
-
-            <div class="item">
-
-                <img src="../images/scrolltest/crab.jpg" alt="Crab Nebula">
-
-            </div>
-
-        </div>
-    </div>
-
-</div>
-<div id="sliderScroll">
-    <div id="slider"></div>
-</div>
-<script type="text/javascript" src="../javascripts/scrolltest/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="../javascripts/scrolltest/jquery-ui-1.7.2.custom.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-
-        //vars
-        var viewer = $(".viewer", $("#sliderContent")),
-                conveyor = $(".content-conveyor", $("#sliderContent")),
-                item = $(".item", $("#sliderContent"));
-
-        //set length of conveyor
-        conveyor.css("width", item.length * parseInt(item.css("width")));
-
-        //config
-        var sliderOpts = {
-            max: (item.length * parseInt(item.css("width"))) - parseInt(viewer.css("width")),
-            slide: function (e, ui) {
-                conveyor.css("left", "-" + ui.value + "px");
-            }
-        };
-
-        //create slider
-        $("#slider").slider(sliderOpts);
-    });
-</script>
+<div id="slider"></div>
 </body>
 </html>
