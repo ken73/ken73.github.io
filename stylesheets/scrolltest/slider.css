@@ -47,9 +47,9 @@ body {
 }
 #slider  {
     width: calc(100% - 30px);
-    height: 1px;
-    border: none;
-    background-color: #515151;
+    /*height: 1px;*/
+    /*border: none;*/
+    /*background-color: #515151;*/
 }
 /*#slider::after {*/
     /*content: "";*/
