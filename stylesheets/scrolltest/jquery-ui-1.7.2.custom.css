@@ -1485,9 +1485,9 @@
 }
 
 .ui-slider-horizontal {
-    height: 1px;
-    background-color: #515151;
-    border: none;
+    /*height: 1px;*/
+    /*background-color: #515151;*/
+    /*border: none;*/
 }
 .ui-slider-horizontal::after {
     content: "";
