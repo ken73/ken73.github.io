@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 #sliderContent {
@@ -47,7 +47,30 @@ body {
 }
 #slider  {
     width: calc(100% - 30px);
-
+    height: 1px;
+    border: none;
+    background-color: #515151;
+}
+#slider::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 30px;
+    background-color: #515151;
+    border: none;
+    position: absolute;
+    right: -30px;
+}
+#slider span {
+    position: absolute;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    top: -15px;
 }
 
 #slider span::after {
