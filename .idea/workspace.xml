@@ -42,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/test/BookPreview/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6900901" vertical-offset="399" max-vertical-offset="2193">
-              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
               </folding>
@@ -419,7 +419,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422070366709</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="creating book">
+      <created>1422070420482</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1422070420482</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -617,7 +623,7 @@
     <entry file="file://$PROJECT_DIR$/test/BookPreview/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6900901" vertical-offset="399" max-vertical-offset="2193">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
           </folding>
